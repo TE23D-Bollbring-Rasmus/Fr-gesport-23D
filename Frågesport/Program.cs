@@ -1,12 +1,13 @@
 ﻿Console.WriteLine("Hej och välkommen till denna frågesport");
 Console.WriteLine("Vad är störst, a en elefant, b en giraff, c ett lejon?");
 string svar1 = Console.ReadLine();
-int maxpoäng = 3;
+
+int poäng = 0;
 
 if (svar1.ToLower() == "a")
 {
     Console.WriteLine("Korrekt!");
-    maxpoäng = 1;
+    poäng += 100;
     Console.ReadLine();
 }
 else
@@ -23,7 +24,7 @@ string svar2 = Console.ReadLine();
 if (svar2.ToLower() == "c")
 {
     Console.WriteLine("Det är sant!");
-    maxpoäng = 2;
+    poäng = poäng + 100;
     Console.ReadLine();
 }
 else
@@ -39,7 +40,7 @@ string svar3 = Console.ReadLine();
 if (svar3.ToLower() == "c")
 {
     Console.WriteLine("Bra jobbat!");
-    maxpoäng = 3;
+    poäng += 100;
     Console.ReadLine();
 }
 else
@@ -48,8 +49,7 @@ else
     Console.ReadLine();
 }
 
-
-if (maxpoäng () == 3-1)
+Console.WriteLine($"Du fick {poäng} poäng");
 
 
 Console.ReadLine();
